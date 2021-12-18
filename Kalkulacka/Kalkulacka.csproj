@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ApplicationIcon>Kalkulacka.ico</ApplicationIcon>
+    <Authors>Petr Mikoláš</Authors>
+    <Company></Company>
+    <PackageIcon>Kalkulacka.ico</PackageIcon>
+    <PackageIconUrl />
+    <Product>Kalkulačka řeziva</Product>
+    <PackageId>Kalkulacka</PackageId>
+    <Copyright>Copyright © Petr Mikoláš 2021</Copyright>
+    <Description>Kalkulačka pro výpočet objemu, plochy a prodejní ceny řeziva.</Description>
+    <AssemblyName>Kalkulačka řeziva</AssemblyName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DefineConstants>TRACE</DefineConstants>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\..\Kalkulacka.ico">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

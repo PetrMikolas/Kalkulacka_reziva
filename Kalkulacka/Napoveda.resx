@@ -1,0 +1,103 @@
+﻿<root>
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="textNapoveda.Text" xml:space="preserve">
+    <value>Posouvání kurzoru:                
+Dopředu - stisknout klávesu Enter, šipku doprava nebo Tab (tabulátor).
+Zpět - stisknout klávesu šipka doleva nebo stisknout a držet klávesu Shift a poté stisknout klávesu Tab.
+
+Zadávání rozměrů řeziva:
+Tloušťka a šírka se zadává v centimetrech a délka v metrech.
+
+Zadávání rozměrů palubek:
+Zadává se pouze šírka a délka v metrech.
+Textová pole m² a Kč/m² se automaticky podbarví žlutě.
+
+Blok "Mezisoučty rozdělené podle opakujících se Kč/m³  [ palubky Kč/m² ]"
+Pokud bude minimálně na dvou řádcích zadána STEJNÁ cena Kč/m³ [ palubky Kč/m² ], tak se v tomto bloku zobrazí SOUČET těchto řádků.
+
+Blok "Celková cena za materiál"
+V tomto bloku se zobrazí CELKOVÉ součty cen ze všech řádků.
+
+Checkbox "Skrýt ceny"
+Po zatrhnutí checkboxu zůstane zobrazena pouze cena střed, ostatní ceny se skryjí.
+
+Checkbox "Zkopírovat Kč/m³ z prvního řádku do prázdných řádků"
+Zatrhnutím checkboxu se zkopíruje cena Kč/m³ z prvního řádku do všech nevyplněných rádků.
+Při zrušení zatrhnutí se smaže zkopírovaná cena pouze z nevyplněných řádků, takže kopírování ceny lze použít během jedné zakázky vícekrát.
+            
+Tlačítko "Reset"
+Kliknutím na tlačítko Reset se VYMAŽOU všechny zadané a vypočítané údaje.
+
+Tlačítko "Uložit"
+Kliknutím na tlačítko Uložit se zobrazí InputBox Název souboru, ve kterém je možné změnit automaticky generovaný název souboru.
+Obrázek formuláře se uloží do složky Cenové nabídky. Tato složka se automaticky vytvoří na pracovní ploše počítače při prvním stisknutí tlačítka Uložit.
+POZOR - uloží se pouze zobrazená část formuláře, takže pokud je vyplněno více jak 20 řádků, tak se musí uložit dva obrázky formuláře.
+Dále se pod zadaným názvem uloží do uložiště v počítači CSV soubor s hodnotami, které lze znovu načíst do kalkulačky, viz níže popsaný postup.
+
+Tlačítko "Načíst"
+Kliknutím na tlačítko Načíst se zobrazí dialogové okno Uložiště, ve kterém je možné vybrat uložený CSV soubor, ze kterého se do kalkulačky načtou hodnoty.
+Po načtení je možné s hodnotami dále pracovat (upravovat, mazat, přidávat). Pozn.: Uložený CSV soubor jde otevřít také v aplikaci Excel.
+                
+Tlačítko "Tisk"
+Kliknutím na tlačítko Tisk se zobrazí dialogové okno Tisk, ve kterém je možno vybrat tiskárnu a nastavit tisk. Vždy se vytiskne pouze zobrazená část formuláře.
+Pokud není k počítači připojena tiskárna, je možno v dialogovém okně Tisk zvolit možnost Microsoft Print to PDF a obrázek formuláře uložit ve formátu PDF do počítače.
+</value>
+  </data>
+</root>
