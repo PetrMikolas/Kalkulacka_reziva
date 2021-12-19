@@ -341,7 +341,7 @@ namespace Kalkulacka {
                 ZobrazVypocetM3[i].BackColor = SystemColors.Control;
                 KlavesaKcZaM3[i].BackColor = Color.White;
                 progressBar.Value = (i * 100 / (Pocet - 1));
-                labelProgress.Text = (i * 100 / (Pocet - 1)).ToString();
+                labelProgress.Text = " " + (i * 100 / (Pocet - 1)).ToString() + " %";
                 labelProgress.Update();
             }
             checkBoxSkryt.Checked = false;
@@ -616,7 +616,7 @@ namespace Kalkulacka {
                         KlavesaPocet[i].Text = bunkyRadku[3];
                         KlavesaKcZaM3[i].Text = bunkyRadku[5];
                         progressBar.Value = (i * 100 / (Pocet - 1));
-                        labelProgress.Text = (i * 100 / (Pocet - 1)).ToString();
+                        labelProgress.Text = " " + (i * 100 / (Pocet - 1)).ToString() + " %";
                         labelProgress.Update();
                         nastavFocus(i);
                     }
